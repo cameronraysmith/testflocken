@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "testflocken"
-version = "0.0.1"
+version = "1.0.0"
 description = "testflocken"
 authors = ["testflocken team <team@testflocken.net>"]
 license = "MIT"
