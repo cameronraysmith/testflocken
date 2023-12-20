@@ -61,8 +61,8 @@
             tag = "latest";
             created = "now";
             config = {
-              entrypoint = [(lib.getExe self'.packages.default)];
-              cmd = [];
+              entrypoint = [];
+              cmd = [(lib.getExe self'.packages.default)];
             };
           };
           releaseEnv = pkgs.buildEnv {
