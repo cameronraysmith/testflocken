@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.0.1](https://github.com/cameronraysmith/testflocken/compare/v1.0.0...v1.0.1) (2023-12-20)
+
+
+### Bug Fixes
+
+* **docs:** add tree to readme ([cb3fc4f](https://github.com/cameronraysmith/testflocken/commit/cb3fc4f14e05816557391b6055b9e016b338c804))
+* **flake:** move container entrypoint to cmd ([ff679a1](https://github.com/cameronraysmith/testflocken/commit/ff679a1eaa1e4449efbf146ec4cc385da1f74846))
+
 ## 1.0.0 (2023-12-20)
 
 
