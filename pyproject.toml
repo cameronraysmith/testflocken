@@ -1,0 +1,49 @@
+[tool.poetry]
+name = "testflocken"
+version = "0.0.1"
+description = "testflocken"
+authors = ["testflocken team <team@testflocken.net>"]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/cameronraysmith/testflocken"
+homepage = "https://cameronraysmith.github.io/testflocken/"
+documentation = "https://cameronraysmith.github.io/testflocken/"
+keywords = [
+    "tool",
+    "library",
+]
+classifiers = [
+    "Framework :: Pytest",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Typing :: Typed",
+]
+
+[tool.poetry.scripts]
+testflocken = "testflocken.cli:testflocken_cli"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+rich-click = "^1.7"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4"
+pytest-cov = "^4.1"
+
+[tool.pytest.ini_options]
+addopts = "--cov testflocken --cov-report term-missing"
+
+[tool.ruff]
+target-version = "py311"
+select = ["E", "W", "F", "B", "UP"]
+ignore = ["E501"]
+
+[tool.ruff.pydocstyle]
+convention = "google"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
